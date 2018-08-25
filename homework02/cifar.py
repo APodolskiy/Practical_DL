@@ -16,7 +16,7 @@ def unpickle(file):
     if sys.version_info[0] == 2:
         dict = pickle.load(fo)
     else:
-        dict = pickle.load(fo,encoding='latin1')
+        dict = pickle.load(fo, encoding='latin1')
     
     fo.close()
     return dict
